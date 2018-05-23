@@ -1,0 +1,31 @@
+~ReactJS is a library that generates the view layer of an application based on its state. ReactJS applications are built from React Components - independent resusable components that describe how the UI should look based on their own state and properties.
+
+~React Components are used to generate a Virtual DOM - a light-weight abstraction of the actual HTML DOM. The Virtual DOM is able to be generated much more quickly than the HTML DOM because it does not have to calculate CSS styles and layouts. When a React Component changes state, the Virtual DOM is recreated and the difference between the new Virtual DOM and the previous Virtual DOM is calculated. The ReactJS library then calculates the most efficient way to update the HTML DOM to reflect these changes. This ends up being much faster than regenerating the entire HTML DOM from the top.
+
+~React Elements are objects that represent a DOM node. They are written using a syntax extension named JSX.React Elements need to be rendered by the ReactDOM.render() method to appear in the DOM.
+
+~JSX is a syntax extension to JavaScript that allows React Elements to be written inside JavaScript using HTML tags.
+
+~A React Component is an independent reusable component that outputs a React Element based on its properties and state.
+There are two types of React Components:
+    Functional Components
+    Class Components
+Class Components have state, lifecycle methods, and properties while Functional Components only have properties.
+
+~Class Components differ from Functional Components because they allow React Components to have life cycle methods and state. Class components have two instance properties, this.state and this.props, that represent the component's state and properties respectively.
+eg- class Welcome extends React.Component{
+	render(){
+	return <h1> hello </h1>
+	}
+}
+Same as - 
+function Welcome(){
+	return <h1> hello </h1>
+}
+~The render() method of a class component is used to describe what kind of React Element is going to be returned from the Class Component. It the same as the return value of of a Functional Component.
+
+~The constructor() method is called before a React Component is mounted and is used to set up the initial state of the component. It is important to call super(props) at the beginning of the constructor() method or else the this.props attribute may not work correctly. The first argument to the constructor() method represents the properties that are passed into the component.
+
+~The setState(updater,[callback]) method is used to update the state of the component. It takes in an updater object and updates the component state by shallowly merging the updater object's attributes with the previous component state. The method updates the state asynchronously, so a there is an option callback that will be called once the state has finished updating completely. In order to use the setState() method, it must be referenced by calling this.setState().
+The setState method will trigger the updating phase of the component lifecycle to start. This will cause the component to rerender unless the shouldComponentUpdate() function returns false.
+
