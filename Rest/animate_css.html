@@ -1,0 +1,29 @@
+
+<html>
+<head>
+<style> 
+#myDIV {
+    width: 300px;
+    height: 200px;
+    background: red;
+    -moz-animation: mymove 50s infinite; 
+    animation: mymove 50s infinite;
+    animation-timing-function: linear; /* moves with same speed ==> more opts like ease , ease-in , ease-out , ease-in-out are present */
+
+}
+/* Standard syntax */
+@keyframes mymove {
+    from {background-color: pink;}
+    to {background-color: brown;}
+}
+body { 
+    background: lightblue url("img_tree.gif") no-repeat fixed right; 
+}
+/* moves element */
+@keyframes mymove {
+    from {left: 50px;}
+    to {left: 500px;}
+} 
+</style>
+</head>
+<body>

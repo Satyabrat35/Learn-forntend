@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+
+<!-- code => https://codepen.io/Erik_35/pen/LmKwjP -->
+
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Dancing+Script:700|Cantarell:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa|Courgette|Orbitron|Great+Vibes|Permanent+Marker" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<title>Portfolio</title>
+</head>
+<body>
+	<style>
+		.navbar {
+  margin-bottom: 0;
+  background-color: rgba(8, 8, 8, 0.8);
+  border: none;
+  &.navbar-default .navbar-nav>li>a,
+  &.navbar-default .navbar-header .navbar-brand {
+    font-family:"Comfortaa" , sans-serif;
+    transition: color 0.5s ease-out;
+    text-transform: uppercase;
+    color: #ffbbaa;
+    &:hover,
+    &:focus,
+    &:active {
+      color:#aabbff
+    }
+  }
+}
+section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  width: 100%;
+  .inside {
+    padding-top:100px;
+    padding-bottom:150px;
+  }
+  &.intro {
+    background-color: #afb1c9;
+    background-image: url("https://s3.amazonaws.com/aistechnolabss3/wp-content/uploads/2018/05/05145404/01-react-native-developer-background.jpg");
+    h2{
+      font-family:"Pacifico",cursive;
+      font-size:50px;
+      font-weight: 400;
+      color:#493652;
+      margin-top: 80px;
+      margin-bottom: 15px;
+      @media (min-width: 768px) {
+        font-size: 50px;
+      }
+    }
+    h3 {      
+        font-family: 'Permanent Marker', cursive;
+        font-weight: 400;
+        font-size: 25px;
+        color: #363b3a;
+      padding-top: 10px;
+      margin-top: 0;
+      margin-bottom: 13px;
+      display: inline-block;
+      @media (min-width: 768px) {
+        font-size: 25px;
+      }
+    }
+    ul {
+      padding-top: 10px;
+      list-style-type: none;
+      li {
+        display:inline;
+        a {
+          color: #aa4b77;
+          transition: color 0.3s ease-out;
+          &:focus,
+          &:hover,
+          &:active {
+            color: #e33258;
+          }
+        }
+      }
+    }
+  }
+  &.about {
+    background-color: #a4b5bf;
+    background-image: url("https:/");
+    color: #fefdeb;
+    font-family: 'Courgette', cursive;
+     p {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.4;
+    }
+    blockquote {
+      font-weight: 800;
+    }
+    .icons {
+      padding-top:100px;
+      padding-bottom:100px;
+      font-size: 40px;
+      .icons_ul {
+        list-style-type:none;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        margin: 0 10px 0 0;
+        li {
+          display:inline;
+        }
+      }
+      
+    }
+  }
+  &.work {
+    background-color: #9de0ad;
+    background-image: url("https://");
+    h2 {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: "Orbritron" ,cursive;
+    }
+    .project {
+      width: 100%;
+      height: 250px;
+      position: relative;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-bottom: 40px;
+    }
+    .overlay {
+      display: table;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: rgba(3,3,3,.3);
+      overflow: hidden;
+      z-index: 10;
+      transition: opacity 0.5s ease-out;
+      h4 {
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+          text-transform: uppercase;
+          font-family: "Cantarell", sans-serif;
+          font-size: 20px;
+          font-weight:800;
+          color: #cdd7c6;
+        }
+    }
+  }
+ 
+}
+	</style>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      <a class="navbar-brand" href="#home">SATYABRAT BHOL</a>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    </div>
+</nav>
+<!-- end of header -->
+<a id="home"></a>
+<section class="intro">
+<div class="container">
+  <div class="row center-block">
+    <div class="col-xs-12 text-center">
+      <div class="inside">
+        <h2>Satyabrat</h2>
+        <h3>Developer</h3>
+        <ul>
+          <li><a href="https://github.com/Satyabrat35" target="_blank"><i class="fa fa-github-square fa-3x fa-fw"></i></a></li>
+          <li><a href="https://medium.com/@satyabratbhol" target="_blank"><i class="fa fa-medium fa-3x fa-fw"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/satyabrat-bhol-6a7645151/" target="_blank"><i class="fa fa-linkedin fa-3x fa-fw"></i></a></li>
+          <li><a href="https://codepen.io/Erik_35/#" target="_blank"><i class="fa fa-codepen fa-3x fa-fw"></i></a></li>
+            </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- about me -->
+<a id="about"></a>
+<section class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="inside">
+          <blockquote>Don’t cry because it’s over, smile because it happened.<small>Ludwig Jacobowski</small></blockquote>
+          <p>Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter Schriftsteller eine Hand voll Wörter nahm und diese durcheinander warf um ein Musterbuch zu erstellen.</p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="icons">
+          <p>Programming Languages</p>
+          <ul class="icons_ul">
+            <li><i class="devicon-python-plain colored"></i></li>
+            <li><i class="devicon-cplusplus-line colored"></i></li>
+            <li><i class="devicon-c-line colored"></i></li>
+            <li><i class="devicon-ruby-plain colored"></i></li>
+            <li><i class="devicon-html5-plain colored"></i></li>
+            <li><i class="devicon-css3-plain colored"></i></li>
+          </ul>
+          <p>Frameworks and Tools</p>
+          <ul class="icons_ul">
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXGUKz2lvat1gxLMK5dfwU-fjcC3cUyJEPO7hqqcGlihukNsRDEQ" width=35 height=35 alt="flask"></li>
+            <li> <i class="devicon-sass-original colored"></i></li>
+            <li> <i class="devicon-slack-plain colored"></i></li>
+            <li> <i class="devicon-jquery-plain colored"></i></li>
+            <li> <i class="devicon-github-plain colored"></i></li>
+            <li> <i class="devicon-bootstrap-plain colored"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a id="work"></a>
+<section class="work">
+  <div class="container">
+    <div class="inside">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="text-center">My Project List</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <a href="https://github.com/Satyabrat35/MapBox-HPDF" target="_blank">
+            <div class="project" style="background-image:url(https://raw.githubusercontent.com/Satyabrat35/MapBox-HPDF/master/navigate.png)">
+            <div class="overlay">
+              <h4>Mapbox Geocoding</h4>
+            </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6">
+          <a href="https://github.com/Satyabrat35/SlackGitBot" target="_blank">
+            <div class="project" style="background-image:url(https://raw.githubusercontent.com/Satyabrat35/SlackGitBot/master/slackgitbot.png)">
+              <div class="overlay">
+                <h4>Slack Gitbot</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+         <div class="col-sm-6">
+          <a href="https://github.com/Satyabrat35/Language-Translator" target="_blank">
+            <div class="project" style="">
+              <div class="overlay">
+                <h4>Language Translater</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+         <div class="col-sm-6">
+          <a href="" target="_blank">
+            <div class="project" style="">
+              <div class="overlay">
+                <h4>Alexa Skill</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <script type="text/javascript">
+        	$(function(){
+  var sizeBrowser = function(){
+    var browHeight = $(window).height();
+    $("section").each(function() {
+      var originalHeight = $(this).find(".inside").outerHeight();
+      if (originalHeight > browHeight) {
+        $(this).css("height", "auto");
+      } else {
+        $(this).css("height", browHeight + "px");
+      }
+    });
+  }
+  
+  sizeBrowser();
+  $('.navbar a').smoothScroll();
+  
+  $(window).resize(function() {
+    sizeBrowser();
+  });
+  
+});
+        </script>
+</body>
+</html>
