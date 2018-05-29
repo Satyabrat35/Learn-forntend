@@ -1,0 +1,368 @@
+<!doctype html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  <style id="jsbin-css">
+/* General */
+
+.container {
+  width: 960px;
+}
+
+
+/* Header */
+
+.header {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #ddd;
+  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  
+  font-size: 17px;
+  padding: 15px;
+}
+
+
+/* Menu */ 
+
+.header .menu {
+  float: right;
+  list-style: none;
+  margin-top: 5px;
+}
+
+.menu > li {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu a {
+  color: #898989;
+}
+
+/* Dropdown */
+
+.dropdown-menu {
+  font-size: 16px;
+  margin-top: 5px;
+  min-width: 105px;
+}
+
+.dropdown-menu li a {
+  color: #898989;
+  padding: 6px 20px;
+  font-weight: 300;
+}
+
+
+/* Carousel */
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 470px;
+  border-bottom: 1px solid #ddd;
+}
+
+.slide {
+  background: transparent url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/feature-gradient-transparent.png') center center no-repeat;
+  background-size: cover;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.active-slide {
+    display: block;
+}
+
+.slide-copy h1 {
+  color: #363636;  
+  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  
+  font-size: 40px;
+  margin-top: 105px;
+  margin-bottom: 0px;
+}
+
+.slide-copy h2 {
+  color: #b7b7b7;
+  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  
+  font-size: 40px;
+  margin: 5px;
+}
+
+.slide-copy p {
+  color: #959595;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15em;
+  line-height: 1.75em;
+  margin-bottom: 15px;
+  margin-top: 16px;
+}
+
+.slide-img {
+  text-align: right;
+}
+
+/* Slide feature */
+
+.slide-feature {
+  text-align: center;
+  background-image: url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/ac.png');
+  height: 470px;
+}
+
+.slide-feature img {
+  margin-top: 112px;
+  margin-bottom: 28px;
+}
+
+.slide-feature a {
+  display: block;
+  color: #6fc5e0;
+  
+  font-family: "HelveticaNeueMdCn", Helvetica, sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  
+  font-size: 20px;
+}
+
+.slider-nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.arrow-prev {
+  margin-right: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+}
+
+.arrow-next {
+  margin-left: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+}
+
+.slider-dots {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.slider-dots li {
+  color: #bbbcbc;
+  display: inline;
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.slider-dots li.active-dot {
+  color: #363636;
+}
+
+/* App links */
+
+.get-app {
+  list-style: none;
+  padding-bottom: 9px;
+  padding-left: 0px;
+  padding-top: 9px;
+}
+
+.get-app li {
+  float: left;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.get-app img {
+  height: 40px;
+}
+</style>
+</head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <a href="#" class="logo-icon">
+          <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/logo.png">
+        </a>
+
+        <ul class="menu">
+          <li><a href="#">Get the App</a></li>
+          <li><a href="#">Tutorials</a></li>
+          <li><a href="#">Magazines</a></li>
+          <li><a href="#">Web Tools</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Careers</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">More <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Our Blog</a></li>
+              <li><a href="#">Maps Blog</a></li>
+              <li><a href="#">Eng Blog</a></li>
+              <li><a href="#">Advertisers</a></li>
+              <li><a href="#">Publishers</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slider">
+
+      <div class="slide active-slide">
+        <div class="container">
+          <div class="row">
+            <div class="slide-copy col-xs-5">
+              <h1>Flipboard Is Your Personal Magazine</h1>
+              <p>It's a single place to discover, collect and share the news you care about.  Add your favorite social networks, publications and blogs to stay connected to the topics and people closest to you.</p>
+              
+              <ul class="get-app">
+                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/ios.png"></a></li>
+                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/android.png"></a></li>
+                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/windows.png"></a></li>
+                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/blackberry.png"></a></li>
+              </ul>
+            </div>
+            <div class="slide-img col-xs-7">
+              <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/home.png" width="540px">
+            </div>
+          </div>
+        </div>      
+      </div>
+
+      <div class="slide slide-feature">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/cnn.png"></a>
+              <a href="#">Read Now</a>
+            </div>
+            
+          </div>
+        </div>      
+      </div> 
+
+      <div class="slide">
+        <div class="container">
+          <div class="row">
+            <div class="slide-copy col-xs-5">
+              <h1>Enjoy Flipboard Magazines</h1>
+              <h2>on the Web</h2>
+              <p>Millions of people use Flipboard to read and collect the news they care about, curating their favorite stories into their own magazines on any topic imaginable. Now magazines created by our readers, from Dali to End Trafficking, can be shared and enjoyed on the Web by anyone, anywhere.</p>
+              
+            </div>
+            <div class="slide-img col-xs-7">
+              <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/magazines.png">
+            </div>
+          </div>
+        </div>      
+      </div> 
+
+
+      <div class="slide">
+        <div class="container">
+          <div class="row">
+            <div class="slide-copy col-xs-5">
+              <h1>Badges & Widgets</h1>
+              <p>Millions of people use Flipboard to read and collect the news they care about, curating their favorite stories into their own magazines. Now you can promote the ones you create or think are awesome.</p>
+              
+              <ul class="get-app">
+                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/ios.png"></a></li>
+                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/android.png"></a></li>
+                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/windows.png"></a></li>
+                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/blackberry.png"></a></li>
+              </ul>
+            </div>
+            <div class="slide-img col-xs-7">
+              <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/bw.png" width="540px">
+            </div>
+          </div>
+        </div>      
+      </div> 
+
+    </div>
+
+    <div class="slider-nav">
+      <a href="#" class="arrow-prev"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-prev.png"></a>
+      <ul class="slider-dots">
+        <li class="dot active-dot">&bull;</li>
+        <li class="dot">&bull;</li>
+        <li class="dot">&bull;</li>
+        <li class="dot">&bull;</li>
+      </ul>
+      <a href="#" class="arrow-next"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-next.png"></a>
+    </div> 
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  <script id="jsbin-javascript">
+var main = function() {
+  $('.dropdown-toggle').click(function() {
+    $('.dropdown-menu').toggle();
+  });
+
+  
+  $('.arrow-next').click(function() {
+    var currentSlide = $('.active-slide');
+    var nextSlide = currentSlide.next();
+
+    var currentDot = $('.active-dot');
+    var nextDot = currentDot.next();
+
+    if(nextSlide.length === 0) {
+      nextSlide = $('.slide').first();
+      nextDot = $('.dot').first();
+    }
+    
+    currentSlide.fadeOut(600).removeClass('active-slide');
+    nextSlide.fadeIn(600).addClass('active-slide');
+
+    currentDot.removeClass('active-dot');
+    nextDot.addClass('active-dot');
+  });
+
+
+  $('.arrow-prev').click(function() {
+    var currentSlide = $('.active-slide');
+    var prevSlide = currentSlide.prev();
+
+    var currentDot = $('.active-dot');
+    var prevDot = currentDot.prev();
+
+    if(prevSlide.length === 0) {
+      prevSlide = $('.slide').last();
+      prevDot = $('.dot').last();
+    }
+    
+    currentSlide.fadeOut(600).removeClass('active-slide');
+    prevSlide.fadeIn(600).addClass('active-slide');
+
+    currentDot.removeClass('active-dot');
+    prevDot.addClass('active-dot');
+  });
+
+}
+
+$(document).ready(main);
+</script>
