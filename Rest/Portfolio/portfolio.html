@@ -7,163 +7,21 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <link href='https://fonts.googleapis.com/css?family=Dancing+Script:700|Cantarell:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.7.2/jquery.smooth-scroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 <link href="https://fonts.googleapis.com/css?family=Comfortaa|Courgette|Orbitron|Great+Vibes|Permanent+Marker" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
 <title>Portfolio</title>
 </head>
 <body>
-	<style>
-		.navbar {
-  margin-bottom: 0;
-  background-color: rgba(8, 8, 8, 0.8);
-  border: none;
-  &.navbar-default .navbar-nav>li>a,
-  &.navbar-default .navbar-header .navbar-brand {
-    font-family:"Comfortaa" , sans-serif;
-    transition: color 0.5s ease-out;
-    text-transform: uppercase;
-    color: #ffbbaa;
-    &:hover,
-    &:focus,
-    &:active {
-      color:#aabbff
-    }
-  }
-}
-section {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  overflow: hidden;
-  width: 100%;
-  .inside {
-    padding-top:100px;
-    padding-bottom:150px;
-  }
-  &.intro {
-    background-color: #afb1c9;
-    background-image: url("https://s3.amazonaws.com/aistechnolabss3/wp-content/uploads/2018/05/05145404/01-react-native-developer-background.jpg");
-    h2{
-      font-family:"Pacifico",cursive;
-      font-size:50px;
-      font-weight: 400;
-      color:#493652;
-      margin-top: 80px;
-      margin-bottom: 15px;
-      @media (min-width: 768px) {
-        font-size: 50px;
-      }
-    }
-    h3 {      
-        font-family: 'Permanent Marker', cursive;
-        font-weight: 400;
-        font-size: 25px;
-        color: #363b3a;
-      padding-top: 10px;
-      margin-top: 0;
-      margin-bottom: 13px;
-      display: inline-block;
-      @media (min-width: 768px) {
-        font-size: 25px;
-      }
-    }
-    ul {
-      padding-top: 10px;
-      list-style-type: none;
-      li {
-        display:inline;
-        a {
-          color: #aa4b77;
-          transition: color 0.3s ease-out;
-          &:focus,
-          &:hover,
-          &:active {
-            color: #e33258;
-          }
-        }
-      }
-    }
-  }
-  &.about {
-    background-color: #a4b5bf;
-    background-image: url("https:/");
-    color: #fefdeb;
-    font-family: 'Courgette', cursive;
-     p {
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 1.4;
-    }
-    blockquote {
-      font-weight: 800;
-    }
-    .icons {
-      padding-top:100px;
-      padding-bottom:100px;
-      font-size: 40px;
-      .icons_ul {
-        list-style-type:none;
-        padding-top: 15px;
-        padding-bottom: 20px;
-        margin: 0 10px 0 0;
-        li {
-          display:inline;
-        }
-      }
-      
-    }
-  }
-  &.work {
-    background-color: #9de0ad;
-    background-image: url("https://");
-    h2 {
-      margin-top: 20px;
-      margin-bottom: 40px;
-      font-weight: 700;
-      text-transform: uppercase;
-      font-family: "Orbritron" ,cursive;
-    }
-    .project {
-      width: 100%;
-      height: 250px;
-      position: relative;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      margin-bottom: 40px;
-    }
-    .overlay {
-      display: table;
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      background-color: rgba(3,3,3,.3);
-      overflow: hidden;
-      z-index: 10;
-      transition: opacity 0.5s ease-out;
-      h4 {
-          display: table-cell;
-          vertical-align: middle;
-          text-align: center;
-          text-transform: uppercase;
-          font-family: "Cantarell", sans-serif;
-          font-size: 20px;
-          font-weight:800;
-          color: #cdd7c6;
-        }
-    }
-  }
- 
-}
-	</style>
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     
